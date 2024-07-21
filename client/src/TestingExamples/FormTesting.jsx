@@ -5,7 +5,7 @@ import SignUpForm from '../TestingCom/Forms/SignUpForm'
 const FormTesting = () => {
   return (
     <div>
-        <SignUpForm title={"Hello world"}/>
+        <SignUpForm title={"Hello"}/>
     </div>
   )
 }
