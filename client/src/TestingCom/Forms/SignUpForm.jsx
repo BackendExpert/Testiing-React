@@ -29,8 +29,7 @@ const SignUpForm = ({Icon}) => {
                 <div className="bg-gradient-to-br from-fuchsia-50 to-pink-200 rounded-2xl shadow-md w-full py-4 md:px-0 px-4">
                     <center className='text-purple-500 my-4'>
                         <div className="">
-                            {/* <BsPersonPlusFill className='h-16 w-auto rounded-full'/> */}
-                            <div className="h-16 w-auto rounded-full">{Icon}</div>
+                            {Icon}
                         </div>
                         <h1 className="text-xl font-semibold pb-6">Registation</h1>
                     </center>
