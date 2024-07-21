@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import BgImg from '../../assets/Image.jpg'
+import { BsMortarboardFill, BsPersonFill, BsPersonPlusFill } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 
 const SignUpForm = ({title, Content}) => {
     const [SignUpData, SetSignUpData] = useState({
