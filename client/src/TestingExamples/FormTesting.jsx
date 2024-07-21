@@ -1,11 +1,12 @@
 import React from 'react'
 import SignUpForm from '../TestingCom/Forms/SignUpForm'
+import { Bs0CircleFill } from 'react-icons/bs'
 
 
 const FormTesting = () => {
   return (
     <div>
-        <SignUpForm title={"Hello"} Content={"Nice to meet you broooooooooooooooooooo"}/>
+        <SignUpForm Icon={<Bs0CircleFill />}/>
     </div>
   )
 }

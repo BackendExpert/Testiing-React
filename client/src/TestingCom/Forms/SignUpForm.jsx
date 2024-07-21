@@ -30,7 +30,7 @@ const SignUpForm = ({Icon}) => {
                     <center className='text-purple-500 my-4'>
                         <div className="">
                             {/* <BsPersonPlusFill className='h-16 w-auto rounded-full'/> */}
-                            {Icon}
+                            <div className="h-16 w-auto rounded-full">{Icon}</div>
                         </div>
                         <h1 className="text-xl font-semibold pb-6">Registation</h1>
                     </center>
