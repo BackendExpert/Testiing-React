@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SignUpForm = () => {
+const SignUpForm = ({title}) => {
   return (
     <div>SignUpForm</div>
   )
