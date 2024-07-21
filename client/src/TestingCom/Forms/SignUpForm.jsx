@@ -1,7 +1,7 @@
 import React from 'react'
 import BgImg from '../../assets/Image.jpg'
 
-const SignUpForm = ({title}) => {
+const SignUpForm = ({title, Content}) => {
     const styles = {
         background: `url(${BgImg})`,
         backgroundSize: 'cover',
@@ -9,7 +9,7 @@ const SignUpForm = ({title}) => {
     }
   return (
     <div style={styles} className='bg-gradient-to-r from-violet-500 to-purple-500 min-h-screen py-24 px-8'>
-
+        {Content}
     </div>
   )
 }
