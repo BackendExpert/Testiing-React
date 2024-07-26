@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import BgImg from '../../assets/Image.jpg'
 import { BsMortarboardFill, BsPersonFill, BsPersonPlusFill } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 
-const SignUpForm = ({Icon}) => {
+const SignUpForm = ({Icon, BgImage}) => {
     const [SignUpData, SetSignUpData] = useState({
         username: '',
         email: '',
@@ -17,7 +16,7 @@ const SignUpForm = ({Icon}) => {
     }
 
     const styles = {
-        background: `url(${BgImg})`,
+        background: `url(${BgImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
     }
