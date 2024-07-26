@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { BsMortarboardFill, BsPersonFill, BsPersonPlusFill } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 
-const SignUpForm = ({Icon, BgImage, FormBGColor, TextColor, LinkColor}) => {
+const SignUpForm = ({Icon, BgImage, FormBGColor, TextColor, LinkColor, InputColor}) => {
     const [SignUpData, SetSignUpData] = useState({
         username: '',
         email: '',
@@ -12,6 +12,8 @@ const SignUpForm = ({Icon, BgImage, FormBGColor, TextColor, LinkColor}) => {
     // send data to backend using axios
     const headleSubmit = async (e) => {
         e.preventDefault();
+
+        alert(SignUpData.username)
 
     }
 
@@ -37,17 +39,17 @@ const SignUpForm = ({Icon, BgImage, FormBGColor, TextColor, LinkColor}) => {
                         <form onSubmit={headleSubmit}>
                              <div className="my-2 md:mx-8">
                                 <label htmlFor="" className={`${TextColor} font-semibold`}>Username : </label>
-                                <input type="text" name="" id="" className="w-full h-12 pl-2 rounded bg-purple-300 text-purple-800 placeholder-white" required placeholder='Enter Username'
+                                <input type="text" name="" id="" className={`w-full h-12 pl-2 rounded bg-purple-300 ${InputColor} placeholder-white`} required placeholder='Enter Username'
                                 onChange={e => SetSignUpData({...SignUpData, username:e.target.value})}/>
                             </div>
                             <div className="my-2 md:mx-8">
                                 <label htmlFor="" className={`${TextColor} font-semibold`}>Email : </label>
-                                <input type="email" name="" id="" className="w-full h-12 pl-2 rounded bg-purple-300 text-purple-800 placeholder-white" required placeholder='Enter Email Address'
+                                <input type="email" name="" id="" className={`w-full h-12 pl-2 rounded bg-purple-300 ${InputColor} placeholder-white`} required placeholder='Enter Email Address'
                                 onChange={e => SetSignUpData({...SignUpData, email:e.target.value})}/>
                             </div>
                             <div className="my-2 md:mx-8">
                                 <label htmlFor="" className={`${TextColor} font-semibold`}>Password : </label>
-                                <input type="password" name="" id="" className="w-full h-12 pl-2 rounded bg-purple-300 text-purple-800 placeholder-white" required placeholder='Enter Password' 
+                                <input type="password" name="" id="" className={`w-full h-12 pl-2 rounded bg-purple-300 ${InputColor} placeholder-white`} required placeholder='Enter Password' 
                                 onChange={e => SetSignUpData({...SignUpData, password:e.target.value})}/>
                             </div>
                             <div className="my-2 md:mx-8">
