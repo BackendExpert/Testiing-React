@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { BsMortarboardFill, BsPersonFill, BsPersonPlusFill } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 
-const SignUpForm = ({Icon, BgImage, FormBGColor, TextColor}) => {
+const SignUpForm = ({Icon, BgImage, FormBGColor, TextColor, LinkColor}) => {
     const [SignUpData, SetSignUpData] = useState({
         username: '',
         email: '',
@@ -56,7 +56,7 @@ const SignUpForm = ({Icon, BgImage, FormBGColor, TextColor}) => {
                         </form>
                     </div>
                     <hr className='my-2'/>
-                    <p className={`my-4 pl-4 ${TextColor}`}>Already have an Account ? <Link to={'/'}><span className="text-purple-800">SignIn</span></Link></p>
+                    <p className={`my-4 pl-4 ${TextColor}`}>Already have an Account ? <Link to={'/'}><span className={`${LinkColor}`}>SignIn</span></Link></p>
                 </div>  
             </div>
             <div className=""></div>

@@ -11,6 +11,7 @@ const FormTesting = () => {
           BgImage={BgImg}
           FormBGColor={'bg-pink-100'}
           TextColor={'text-red-500'}
+          LinkColor={'text-red-700'}
         />
     </div>
   )
