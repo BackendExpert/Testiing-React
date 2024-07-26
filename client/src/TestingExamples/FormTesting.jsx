@@ -13,6 +13,9 @@ const FormTesting = () => {
           TextColor={'text-red-500'}
           LinkColor={'text-red-700'}
           InputColor={'bg-red-200'}
+          PlaceHolderColor={'white'}
+          BtnBG={'bg-green-500'}
+          BtnTextColor={'text-white'}
         />
     </div>
   )
