@@ -9,6 +9,8 @@ const FormTesting = () => {
         <SignUpForm
           Icon={<Bs0CircleFill className='h-16 w-auto rounded-full'/>}
           BgImage={BgImg}
+          FormBGColor={'bg-pink-100'}
+          TextColor={'text-red-500'}
         />
     </div>
   )
